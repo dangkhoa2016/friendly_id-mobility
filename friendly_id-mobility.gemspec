@@ -6,8 +6,8 @@ require 'friendly_id/mobility/version'
 Gem::Specification.new do |spec|
   spec.name          = "friendly_id-mobility"
   spec.version       = FriendlyId::Mobility::VERSION
-  spec.authors       = ["Chris Salzberg"]
-  spec.email         = ["chris@dejimata.com"]
+  spec.authors       = ["Chris Salzberg", "Đăng Khoa"]
+  spec.email         = ["chris@dejimata.com", "i.am@dangkhoa.dev"]
 
   spec.summary       = %q{Translate your FriendlyId slugs with Mobility.}
   spec.homepage      = "https://github.com/shioyama/friendly_id-mobility"
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'mobility',    '>= 1.0.1', '< 2.0'
-  spec.add_dependency 'friendly_id', '>= 5.0.0', '< 5.6'
+  spec.add_dependency 'friendly_id', '>= 5.0.0', '<= 5.7.0'
   spec.add_development_dependency "rake", ">= 12.3.3"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "database_cleaner", '~> 1.5', '>= 1.5.3'
