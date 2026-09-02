@@ -2,6 +2,13 @@
 
 ## 1.0
 
+### 1.0.7
+* Correct the generated localized-history migration so the
+  `friendly_id_slugs.locale` column is created with a real `NOT NULL`
+  constraint.
+* Add an executed-migration regression test that verifies schema
+  nullability rather than checking generated source text only.
+
 ### 1.0.5
 * Update CI matrix to be inline with mobility
 * Remove Ruby 3.1, Rails 7.0/7.1 from CI matrix
@@ -69,7 +76,6 @@
 
 ## 0.1.0
 * Mixin Mobility scope into FriendlyId scope
-
 
 
 
